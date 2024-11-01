@@ -9,24 +9,14 @@ import org.openqa.selenium.support.ui.Select;
 public class CriarTarefaTeste {
 
 	@Test
-	public void teste() throws InterruptedException {
+	public void criarTarefaApenasComCamposObrigatorios() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		
-// 		Acessando a plataforma Mantis e inserindo credenciais 
-		
-		driver.get("https://mantis-prova.base2.com.br/login_page.php");
-		WebElement usuario = driver.findElement(By.id("username"));
-		usuario.sendKeys("");
-		WebElement entrarUsuario = driver.findElement(By.xpath("//input[@value = 'Entrar']"));
-		entrarUsuario.click();
-		WebElement senha	= driver.findElement(By.id("password"));
-		senha.sendKeys("");
-		WebElement entrarSenha = driver.findElement(By.xpath("//input[@value = 'Entrar']"));
-		entrarSenha.click();
-	 	
-	
+
+		Utils.facaLogin(driver);
+
 		driver.get("https://mantis-prova.base2.com.br/bug_report_page.php");
+		
 //		 selecionando os Campos Obrigatorios  
 		Select categoria = new Select(driver.findElement(By.id("category_id")));
 		WebElement resumo = driver.findElement(By.id("summary"));
