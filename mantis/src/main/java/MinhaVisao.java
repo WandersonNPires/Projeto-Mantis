@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class MinhaVisao {
 
 	@Test
-	public void imprimirTarefasCSV() throws InterruptedException {
+	public void visaoLinhadoTempo() throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 
