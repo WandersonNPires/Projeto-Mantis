@@ -85,7 +85,7 @@ public class VerTarefas {
 		driver.get("https://mantis-prova.base2.com.br/view_all_bug_page.php?refresh=true");
 		WebElement imprimirTarefas = driver.findElement(By.xpath("//a[@href=\"print_all_bug_page.php\"]"));
 		imprimirTarefas.click();
-		
+		//TODO (checkbox)  Ao marcar checbkox o codigo não apresenta mudança, com isso a busca tras um resultado vazio
 		WebElement mostrarSelecionados =driver.findElement(By.xpath("//input[@value = 'Mostrar apenas os selecionados']"));
 		mostrarSelecionados.click();
 		
