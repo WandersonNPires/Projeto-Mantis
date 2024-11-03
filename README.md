@@ -24,3 +24,4 @@ Caso de teste automatizado:
 
 Visualizar Linha do Tempo
 
+![image](https://github.com/user-attachments/assets/36c54e0d-6e29-44ea-b693-81f485fb86c4)
