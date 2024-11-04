@@ -15,10 +15,10 @@ Criar Tarefa com apenas campos obrigatórios
 Visualizar Tarefas
  Casos de teste automatizados:
  
- Exportar Tarefas para Excel
- Exportar Tarefas para Word 2000
- Exportar Tarefas para WorldView
- Exportar Tarefas para CSV
+ Exportar Tarefas para Excel,
+ Exportar Tarefas para Word 2000,
+ Exportar Tarefas para WorldView,
+ Exportar Tarefas para CSV,
  Visualizar Tarefas não marcadas
 
 Minha Visão
